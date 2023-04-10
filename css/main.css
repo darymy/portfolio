@@ -211,6 +211,7 @@ body.noscroll {
 
 .button--gray {
   background: #0a527e;
+  color: #fff;
 }
 .button--gray:hover {
   background: #0c6aa4;
@@ -1305,6 +1306,7 @@ body.noscroll {
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   /* Tablet Big*/
   /* Tablet Small */
   /* Mobile */
