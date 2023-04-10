@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- encoding -->
+    <meta charset="UTF-8" />
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and SEO -->
+    <title>Портфолио</title>
+    <meta name="description" content="Описание страницы" />
+    <meta name="keywords" content="ключевые слова, фразы" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Open Graph -->
+    <!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Дарья Гарина. Web-разработчик">
+    <meta property="og:description" content="Портфолио">
+    <meta property="og:image" content="./img/opengraph.jpg">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<div class="header-top">
+    <div class="container">
+        <div class="header-top-row">
+            <!-- Overlay when open mobile menu -->
+            <div class="overlay"></div>
+            <!-- Mobile logo -->
+            <span class="header-mobile-text">HTML Верстальщик</span>
+            <!-- Mobile nav icon -->
+            <button class="mobile-nav">
+                <div class="mobile-nav-middle"></div>
+            </button>
+            <!-- Mobile menu -->
+            <div class="mobile-menu">
+                <ul class="mobile-menu--list">
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#steps">Как я работаю</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                <div class="mobile-menu--contacts">
+                    <div class="social-links">
+                        <a href="https://t.me/darymy" target="_blank"><img src="./img/socials/telegram.svg" alt="telegram"></a>
+                        <a href="https://vk.com/darymy" target="_blank"><img src="./img/socials/vk.svg" alt="vk"></a>
+                        <a href="https://wa.me/9872618403" target="_blank"><img src="./img/socials/whatsapp.svg" alt="whatsapp"></a>
+                    </div>
+                    <a href="mailto:darigarina@yandex.ru" class="links">darigarina@yandex.ru</a>
+                </div>
+            </div>
+            <nav class="header-top-nav">
+                <ul class="header-top-nav-list" id="header-top-nav">
+                    <li><a class="header-top-nav-link" href="#top">Главная</a></li>
+                    <li><a class="header-top-nav-link" href="#skills">Навыки</a></li>
+                    <li><a class="header-top-nav-link" href="#portfolio">Портфолио</a></li>
+                    <li><a class="header-top-nav-link" href="#steps">Как я работаю</a></li>
+                    <li><a class="header-top-nav-link" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-top-links">
+                <a href="https://github.com/darymy" target="_blank">
+                    <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_112_516)">
+                            <path
+                                d="M21 0.875C9.3975 0.875 0 10.115 0 21.511C0 30.6303 6.0165 38.3635 14.3587 41.09C15.4087 41.2843 15.7937 40.6455 15.7937 40.0978C15.7937 39.6078 15.7763 38.3093 15.7675 36.589C9.926 37.8333 8.694 33.8205 8.694 33.8205C7.7385 31.4388 6.35775 30.8018 6.35775 30.8018C4.4555 29.5225 6.50475 29.5488 6.50475 29.5488C8.6135 29.6923 9.72125 31.675 9.72125 31.675C11.5938 34.8303 14.637 33.9185 15.8375 33.3918C16.0265 32.0565 16.5673 31.1483 17.1675 30.632C12.5038 30.1158 7.602 28.3413 7.602 20.4348C7.602 18.1825 8.41575 16.3415 9.76325 14.8977C9.527 14.3763 8.81825 12.278 9.947 9.436C9.947 9.436 11.7058 8.883 15.722 11.5518C17.402 11.0933 19.187 10.8658 20.972 10.8553C22.757 10.8658 24.542 11.0933 26.222 11.5518C30.212 8.883 31.9707 9.436 31.9707 9.436C33.0995 12.278 32.3908 14.3763 32.1807 14.8977C33.5195 16.3415 34.3332 18.1825 34.3332 20.4348C34.3332 28.3623 29.4245 30.107 24.752 30.6145C25.487 31.234 26.1695 32.4993 26.1695 34.433C26.1695 37.1945 26.1432 39.4135 26.1432 40.0838C26.1432 40.6245 26.5107 41.2703 27.587 41.0638C35.9888 38.3548 42 30.6163 42 21.511C42 10.115 32.5972 0.875 21 0.875Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="header-content" id="top">
+        <div class="header-title">
+            <div class="container">
+                <div class="header-title-wrapper">
+                    <div class="header-title-description">
+                        <div class="header-heading-wrapper">
+                            <h1 class="main-title title-grad">Дарья Гарина</h1>
+                        </div>
+                        <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
+                        <a href="#skills" class="button" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="0">Познакомиться</a>
+                        <a href="#contacts" class="button button--gray" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="0">Контакты</a>
+                    </div>
+                    <div class="header-title-img">
+                        <img src="./img/header/avatar.jpg" alt="Дарья Гарина">
+                    </div>
+                    <div class="header-mobile-description">
+                        <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и
+                            выполнением ТЗ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-banner">
+            <img src="./img/header/bunner.png" alt="Header banner">
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="skills-wrapper">
+                <div class="skills-column" data-aos="fade-right">
+                    <h3 class="skills-column-title">Что я умею:</h3>
+                    <div class="skills-description">
+                        <ul class="skills-description-list">
+                            <li class="skills-description-item">pixel perfect, полное соответствие макету</li>
+                            <li class="skills-description-item">верстаю с сеткой или без</li>
+                            <li class="skills-description-item">адаптивная верстка под мобильные устройства</li>
+                            <li class="skills-description-item">оптимизация по retina экраны</li>
+                            <li class="skills-description-item">с Bootstrap и без него</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3 class="skills-column-title" ata-aos="fade-left">На связи:</h3>
+                    <div class="social-links">
+                        <a href="https://t.me/darymy"><img src="./img/socials/telegram.svg" alt="Telegram"></a>
+                        <a href="https://vk.com/darymy"><img src="./img/socials/vk.svg" alt="VK"></a>
+                        <a href="https://wa.me/9872618403"><img src="./img/socials/whatsapp.svg" alt="Whatsapp"></a>
+                    </div>
+                    <a href="mailto:darigarina@yandex.ru" class="links">darigarina@yandex.ru</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title title-grad--section">Портфолио</h2>
+            <div class="portfolio--wrapper">
+
+                <!-- Portfolio cards -->
+                <div class="portfolio-cards">
+                    <!-- Card -->
+                    <a target="blank" href="https://darymy.github.io/unit-project/" class="card card--big mix ms">
+                        <div class="card-img">
+                            <span>Смотреть проект</span>
+                            <img src="./img/portfolio/unit.jpg" alt="Unit">
+                        </div>
+                        <div class="card-description">
+                            <h4 class="card-description-title">Сайт приложения “Юнит”</h4>
+                            <p class="card-description-subtitle">Верстка лендинга</p>
+                        </div>
+                    </a>
+                    <!-- // Card -->
+                    <a target="blank" href="https://darymy.github.io/forest-travel/" class="card card--big mix ms">
+                        <div class="card-img">
+                            <span>Смотреть проект</span>
+                            <img src="./img/portfolio/forest.jpg" alt="Forest-travel">
+                        </div>
+                        <div class="card-description">
+                            <h4 class="card-description-title">Верстка “Форест тревел”</h4>
+                            <p class="card-description-subtitle">Верстка многостраничного сайта </p>
+                        </div>
+                    </a>
+                    <!-- Card -->
+                    <a target="blank" href="https://darymy.github.io/russian-travel/" class="card card--big mix ms">
+                        <div class="card-img">
+                            <span>Смотреть проект</span>
+                            <img src="./img/portfolio/baikal.png" alt="Baikal">
+                        </div>
+                        <div class="card-description">
+                            <h4 class="card-description-title">"Байкал"</h4>
+                            <p class="card-description-subtitle">Верстка лендинга</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps" id="steps">
+        <div class="container">
+            <h2 class="section-title title-grad--section">Как я работаю</h2>
+            <div class="steps-tree">
+                <div class="steps-tree-item" data-aos="fade-right">
+                    <h3 class="steps-tree-title title-grad--steps">Оцениваю макет</h3>
+                    <p>Оцениваю объем работы, сложность, нюансы.&nbsp;Задаю вопросы.</p>
+                    <span>Время: 2 часа</span>
+                </div>
+                <div class="steps-tree-item" data-aos="fade-left">
+                    <h3 class="steps-tree-title title-grad--steps">ТЗ, смета и график работ</h3>
+                    <p>Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</p>
+                    <span>Время: 2 - 4 часа</span>
+                </div>
+                <div class="steps-tree-item" data-aos="fade-right">
+                    <h3 class="steps-tree-title title-grad--steps">Вы держите руку на пульсе</h3>
+                    <p>Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</p>
+                </div>
+                <div class="steps-tree-item" data-aos="fade-left">
+                    <h3 class="steps-tree-title title-grad--steps">Выполняю каждый этап</h3>
+                    <p>Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
+                </div>
+                <div class="steps-tree-item" data-aos="fade-right">
+                    <h3 class="steps-tree-title title-grad--steps">Финальное ревью проекта</h3>
+                    <p>Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
+                    <span>Время: 2 - 4 часа</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer" id="contacts">
+    <div class="footer-contacts">
+        <div class="container">
+            <h2 class="section-title title-grad--section">Контакты</h2>
+            <div class="footer-row">
+                <div class="footer-column">
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><span>Email</span><a href="mailto:darigarina@yandex.ru"
+                                class="links">darigarina@yandex.ru</a></li>
+                        <li class="footer-list-item"><span>Телефон</span><a href="tel:+79872618403" class="links">
+                            +7 (987) 261-84-03</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://t.me/darymy"><img src="./img/socials/telegram.svg" alt="Telegram"></a>
+                        <a href="https://vk.com/darymy"><img src="./img/socials/vk.svg" alt="VK"></a>
+                        <a href="https://wa.me/9872618403"><img src="./img/socials/whatsapp.svg" alt="Whatsapp"></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-description">
+                        Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над
+                        проектом — напишите мне.
+                    </div>
+                </div>
+                <div class="footer-icon">
+                    <img src="./img/contacts/contacts-icon.svg.svg" alt="Иконка контакты">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p class="footer-copyright-title">© 2023 — Дарья Гарина</p>
+            <p class="footer-copyright-subtitle">Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.</p>
+        </div>
+    </div>
+</footer>
+		<!-- Jquery -->
+		<script src="./libs/jquery/jquery-3.6.3.min.js"></script>
+		<script src="./libs/jquery/validate/jquery.validate.min.js"></script>
+
+		<!-- PageNav -->
+		<script src="./libs/pageNav/nav.js"></script>
+
+		<!-- Mixitup -->
+		<script src="./libs/mixitup/mixitup.min.js"></script>
+
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- INITIALIZE AOS -->
+		<script>
+			AOS.init();
+		</script>
+
+<script src="./js/main.js"></script>
+</body>
+
+</html>

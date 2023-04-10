@@ -1,0 +1,41 @@
+.social-links {
+    display: flex;
+    column-gap: 30px;
+
+    a{
+        transition: .3s ease-in;
+        &:hover{
+            opacity: 0.75;
+        }
+
+        /* Tablet Small */
+        @media (max-width: 899px) {
+           width: 38px;
+           height: 38px;
+        }
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+       column-gap: 20px;
+    }
+
+    
+}
+
+.links {
+    transition: .3s ease-in;
+
+    color: #1A71D2;
+    font-weight: 400;
+    font-size: 22px;
+
+    &:hover{
+        color: #FF543E;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+       font-size: 18px;
+    }
+}

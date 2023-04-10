@@ -1,0 +1,120 @@
+.button {
+    height: 64px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #35bdf3;
+    border-radius: 50px;    
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 64px;
+    text-align: center;
+
+    transition: .5s ease-in;
+
+    &:hover{
+        background: #5754ff;
+    }
+
+    &:active{
+        background: #03a0de;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+       height: 58px;
+       line-height: 58px;
+
+       padding-left: 26px;
+       padding-right: 26px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       display: none;
+    }
+}
+
+.button--gray {
+    background: #0a527e;
+
+    &:hover {
+        background: #0c6aa4;
+    }
+
+    &:active{
+        background: #098fe2;
+    }
+}
+
+/* Mobile menu */
+
+.mobile-nav{
+    display: none;
+    
+    z-index: 5;
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       display: block;
+       position: fixed;
+       top: 38px;
+       right: 15px;
+    }
+
+    .mobile-nav-middle{
+        position: relative;
+        width: 40px;
+        height: 5px;
+
+        background-color: #000000;
+
+        transition: .2s ease-in .3s;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 40px;
+            height: 5px;
+            background-color: #000000;
+
+            transition: transform .2s ease-in, top .2s linear .2s;  
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 40px;
+            height: 5px;
+            background-color: #000000;
+
+            transition: transform .2s ease-in, top .2s linear .2s;
+        }
+    }
+
+
+    // Активное состояние мобильной навигации
+    &--active{
+        .mobile-nav-middle{
+        background-color: transparent;
+
+            &::before{
+                transform: rotate(45deg);
+                top: 0;
+
+                transition: top .2s linear, transform .2s ease-in .2s;
+            }
+
+            &::after{
+                transform: rotate(-45deg);
+                top: 0;
+
+                transition: top .2s linear, transform .2s ease-in .2s;
+            }
+        }
+    }
+}

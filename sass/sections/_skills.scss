@@ -1,0 +1,104 @@
+.skills{
+   padding-top: 70px; // Чтобы во время прокрутки к этому блоку на странице, блок располагался с отступом от верхнего края страницы
+   margin-top: -70px; // Компенсируем верхний паддинг для правильного отображения во время прокрутки к этому блоку
+   padding-bottom: 90px;
+
+   /* Tablet Big */
+   @media (max-width: 1139px) {
+      padding-bottom: 60px;
+   }
+
+   /* Tablet Small */
+   @media (max-width: 899px) {
+      padding-bottom: 40px;
+   }
+}
+
+.skills-wrapper{
+   display: flex;
+   column-gap: 87px;
+
+  /* Tablet Big */
+   @media (max-width: 1139px) {
+      column-gap: 50px;
+   }
+
+   /* Tablet Small */
+   @media (max-width: 899px) {
+      column-gap: 30px;
+   }
+
+   /* Mobile */
+   @media (max-width: 767px) {
+      flex-direction: column;
+      row-gap: 30px;
+   }
+}
+
+.skills-column {
+
+    .links{
+       margin-top: 20px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       width: 50%;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+       width: 100%;
+    }
+}
+
+.skills-column-title {
+   margin-bottom: 30px;
+
+   font-weight: 700;
+   font-size: 42px;
+
+   /* Tablet Big */
+   @media (max-width: 1139px) {
+       margin-bottom: 20px;
+
+       font-size: 32px;
+   }
+
+   /* Tablet Small */
+   @media (max-width: 899px) {
+      font-size: 24px;
+   }
+}
+
+.skills-description-list{
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+
+   font-weight: 400;
+   font-size: 22px;
+
+   /* Tablet Big */
+   @media (max-width: 1139px) {
+      font-size: 18px;
+   }
+
+   /* Tablet Small */
+   @media (max-width: 899px) {
+      font-size: 16px;
+   }
+}
+
+.skills-description-item{
+
+   &::before{
+       content: "—";
+       padding-right: 3px;
+
+       /* Tablet Small */
+       @media (max-width: 899px) {
+          display: none;
+       }
+   }
+}

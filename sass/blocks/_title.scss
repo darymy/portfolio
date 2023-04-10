@@ -1,0 +1,114 @@
+.main-title {
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 1;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+       font-size: 58px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       font-size: 42px;
+    }
+    
+    /* Mobile */
+    @media (max-width: 767px) {
+       font-size: 32px;
+    }
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 54px;
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       font-size: 42px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       font-size: 32px;
+    }
+}
+
+.steps-tree-title {
+    font-weight: 700;
+    font-size: 24px;
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       font-size: 20px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       margin-right: 79px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+       margin-right: 0;
+    }
+}
+
+.title-grad {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 15px;
+    background-size: 100% 12px;
+    background-image: linear-gradient(to left , #4dcffb, #4d87fb);
+
+   /* Tablet Big*/
+   @media (max-width: 1139px) {
+      background-size: 100% 10px;
+      background-position: center bottom 10px;
+   }
+
+   /* Tablet Small */
+   @media (max-width: 899px) {
+      background-size: 100% 8px;
+      background-position: center bottom 5px;
+   }
+
+   /* Mobile */
+   @media (max-width: 767px) {
+      background-position: center bottom 3px;
+   }
+}
+
+.title-grad--section {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 10px;
+    background-size: 100% 8px;
+   //  background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
+   background-image: linear-gradient(to left , #4dcffb, #4d87fb);
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+      background-position: center bottom 5px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+      background-position: center bottom 3px;
+    }
+}
+
+.title-grad--steps {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 3px;
+    background-size: 100% 6px;
+   //  background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
+   background-image: linear-gradient(to left , #4dcffb, #4d87fb);
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+      background-position: center bottom 1px;
+    }
+}
+

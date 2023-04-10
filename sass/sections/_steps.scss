@@ -1,0 +1,179 @@
+.steps{
+    padding-top: 70px;
+    padding-bottom: 90px;
+
+    text-align: center;
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       padding-top: 60px;
+       padding-bottom: 70px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       padding-top: 40px;
+       padding-bottom: 40px;
+    }
+
+}
+
+.steps-tree{
+    width: 901px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto; 
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       width: 774px;
+       margin-top: 51px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       width: 384px;
+       margin-top: 41px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+       width: 290px;
+    }
+}
+
+.steps-tree-item{
+    position: relative;
+    width: 50%;
+    padding-right: 53px;
+    padding-bottom: 58px;
+    text-align: right;
+
+    p {
+        padding-top: 8px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+
+        /* Tablet Big*/
+        @media (max-width: 1139px) {
+           font-size: 14px;
+           padding-top: 7px;
+        }
+    }
+
+    span {
+        display: block;
+        padding-top: 7px;
+
+        font-weight: 700;
+        font-size: 16px;
+
+        /* Tablet Big*/
+        @media (max-width: 1139px) {
+           font-size: 14px;
+           padding-top: 10px;
+        }
+    }
+
+    /* Круг */
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -17px;
+
+        width: 34px;
+        height: 34px;
+        border: 4px solid #E1EEF4;
+        border-radius: 50%;
+
+        /* Tablet Small */
+        @media (max-width: 899px){
+            right: auto;
+            left: 0;
+        }
+    }
+
+    /* Линия */
+    &::after{
+        content: "";
+        position: absolute;
+        top: 34px;
+        right: -2px;
+        bottom: 0;
+
+        width: 4px;
+        
+        background-color: #E1EEF4;
+
+        /* Tablet Small */
+        @media (max-width: 899px){
+            right: auto;
+            left: 15px;
+        }
+    }
+
+    /* Стили для четных элементов*/
+    &:nth-child(even){
+        margin-left: auto;
+        padding-left: 53px;
+
+        text-align: left;
+
+        /* Круг */
+        &::before{
+            right: auto;
+            left: -17px;
+
+            /* Tablet Small */
+            @media (max-width: 899px){
+                left: 0px;
+            }
+        }
+        /* Линия */
+        &::after{
+            right: auto;
+            left: -2px;
+
+            /* Tablet Small */
+            @media (max-width: 899px){
+                left: 15px;
+            }
+        }
+
+        /* Tablet Big*/
+        @media (max-width: 1139px) {
+           padding-left: 36px;
+        }
+
+         /* Tablet Small */
+         @media(max-width: 899px){
+            padding-left: 43px;
+        }
+    }
+    /* Удаление линии у последнего элемента */
+    &:last-child{
+        &::after{
+            width: 0;
+        }
+        padding-bottom: 0;
+    }
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       padding-right: 37px;
+       padding-bottom: 70px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       width: 100%;
+       text-align: left;
+
+       padding-right: 0;
+       padding-left: 43px;
+       padding-bottom: 45px;
+    }
+}
